@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/xenial64"
 
   # network configuration
-  config.vm.network "forwarded_port", host_ip: "127.0.0.1", guest: 8080, host: 8080
+  config.vm.network "forwarded_port", host_ip: "127.0.0.1", guest: 5454, host: 5454
 
   config.vm.provision "shell", inline: <<-SHELL
     # Update and upgrade the server packages.
